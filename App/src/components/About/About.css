@@ -1,0 +1,172 @@
+.about {
+  min-height: 100vh;
+  padding: 100px 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  background: linear-gradient(180deg, #1b1b1b 0%, #0d1117 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #4fd1c5, transparent);
+}
+
+.light-rays-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+}
+
+.about-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #fff, #4fd1c5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.about-content strong {
+  color: #4fd1c5;
+  font-weight: 600;
+}
+
+.about-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.tech-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.floating-card {
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid rgba(79, 209, 197, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-card:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.floating-card:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.floating-card:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.floating-card:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+.floating-card:nth-child(5) {
+  animation-delay: 1.5s;
+}
+
+.floating-card:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.tech-icon {
+  font-size: 3rem;
+  filter: drop-shadow(0 0 10px currentColor);
+}
+
+.tech-name {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 80px 5%;
+  }
+
+  .tech-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 568px) {
+  .about {
+    padding: 60px 5%;
+  }
+
+  .about-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .tech-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .floating-card {
+    padding: 20px 15px;
+  }
+
+  .tech-icon {
+    font-size: 2.5rem;
+  }
+}
+
