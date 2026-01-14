@@ -111,33 +111,10 @@
   font-style: normal;
 }
 
-.navbar-link-fancy::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #4fd1c5, #38b2ac, #4fd1c5);
-  background-size: 200% 100%;
-  border-radius: 2px;
-  transition: width 0.4s ease;
-  animation: shimmer 3s infinite;
-}
-
-@keyframes shimmer {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
 .navbar-link-fancy:hover {
   color: #4fd1c5;
   transform: translateY(-2px);
   filter: drop-shadow(0 0 15px rgba(79, 209, 197, 0.8));
-}
-
-.navbar-link-fancy:hover::before {
-  width: 100%;
 }
 
 .navbar-link-home {
