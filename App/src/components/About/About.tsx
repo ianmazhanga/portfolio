@@ -1,7 +1,6 @@
 import './About.css';
 import { motion, useInView, type Variants } from 'framer-motion';
 import { useRef } from 'react';
-import LightRays from '../LightRays/LightRays';
 
 const About = () => {
   const ref = useRef(null);
@@ -54,20 +53,6 @@ const About = () => {
 
   return (
     <section className="about" ref={ref}>
-      <div className="light-rays-background">
-        <LightRays
-          raysOrigin="top-center"
-          raysColor="#4fd1c5"
-          raysSpeed={0.8}
-          lightSpread={1.2}
-          rayLength={2.5}
-          fadeDistance={1.2}
-          saturation={1.0}
-          followMouse={true}
-          mouseInfluence={0.15}
-        />
-      </div>
-
       <motion.div
         className="about-content"
         variants={containerVariants}
