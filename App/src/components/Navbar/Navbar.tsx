@@ -8,10 +8,7 @@ const Navbar = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-  const isHomePage = location.pathname === '/' || location.pathname === '/portfolio/' || location.pathname === '/portfolio';
-
-  // Debug: log current path
-  console.log('Current pathname:', location.pathname, 'isHomePage:', isHomePage);
+  const isHomePage = location.pathname === '/';
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
