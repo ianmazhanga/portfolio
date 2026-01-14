@@ -10,8 +10,8 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Mwenz Group - Fuel Supply Company',
-      description: 'Professional business website for a fuel supply company serving multiple industries. Features multi-page architecture, dark/light theme toggle, responsive design, and performance optimizations with lazy loading and code splitting.',
+      title: 'Mwenz Group - Fuel Supply Company Website',
+      description: 'Commercial client project - Full-featured corporate website developed for Mwenz Group, a fuel supply company serving mining, construction, and agricultural industries. Implemented multi-page architecture with Services, About, and Contact pages, dark/light theme toggle for accessibility, fully responsive design across all devices, and advanced performance optimizations including lazy loading and code splitting for optimal load times.',
       tech: ['React', 'TypeScript', 'Framer Motion', 'React Router', 'Vite'],
       image: '⛽',
       github: 'https://github.com/ianmazhanga/mwenz-group',
