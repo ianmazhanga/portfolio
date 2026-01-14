@@ -10,10 +10,6 @@ const Navbar = () => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
 
-  // Debug logging
-  console.log('Current pathname:', location.pathname);
-  console.log('isHomePage:', isHomePage);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -151,7 +147,7 @@ const Navbar = () => {
               transition={{ duration: 0.5, delay: centerNavItem.delay }}
             >
               <motion.button
-                className={`navbar-link-fancy navbar-link-home ${isHomePage ? 'active' : ''}`}
+                className={`navbar-link-fancy ${isHomePage ? 'active' : ''}`}
                 onClick={() => handleNavigation(centerNavItem.path)}
                 animate={{
                   scale: isHomePage ? 1.08 : 1,
