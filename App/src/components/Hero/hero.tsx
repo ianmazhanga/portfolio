@@ -1,20 +1,23 @@
 import './hero.css';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import Ballpit from '../Ballpit/Ballpit';
+import Particles from '../Particles/Particles';
 import TextType from '../TextType/TextType';
 
 const Hero = () => {
   return (
     <section className="hero">
-      {/* 3D Ballpit background */}
-      <div className="ballpit-background">
-        <Ballpit
-          count={200}
-          gravity={0.7}
-          friction={0.8}
-          wallBounce={0.95}
-          followCursor={true}
+      {/* Particles background */}
+      <div className="particles-background">
+        <Particles
+          particleColors={['#4FD1C5', '#63B3ED', '#FC8181']}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
         />
       </div>
 

@@ -8,8 +8,8 @@
   background: linear-gradient(180deg, #1b1b1b 0%, #0d1117 100%);
 }
 
-/* 3D Ballpit background */
-.ballpit-background {
+/* Particles background */
+.particles-background {
   position: absolute;
   inset: 0;
   width: 100%;
