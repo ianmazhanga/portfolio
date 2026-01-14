@@ -10,6 +10,15 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: 'Mwenz Group - Fuel Supply Company',
+      description: 'Professional business website for a fuel supply company serving multiple industries. Features multi-page architecture, dark/light theme toggle, responsive design, and performance optimizations with lazy loading and code splitting.',
+      tech: ['React', 'TypeScript', 'Framer Motion', 'React Router', 'Vite'],
+      image: '⛽',
+      github: 'https://github.com/ianmazhanga/mwenz-group',
+      live: 'https://ianmazhanga.github.io/mwenz-group/',
+    },
+    {
+      id: 2,
       title: 'Nike E-Commerce Website',
       description: 'Modern e-commerce website built with React, TypeScript, and Tailwind CSS. Features responsive design, product showcase, and clean UI/UX.',
       tech: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
@@ -18,7 +27,7 @@ const Projects = () => {
       live: 'https://ianmazhanga.github.io/nike-website/',
     },
     {
-      id: 2,
+      id: 3,
       title: 'Dashboard Project',
       description: 'Interactive dashboard application with data visualization and analytics. Built with modern web technologies for optimal performance.',
       tech: ['TypeScript', 'CSS', 'JavaScript'],
@@ -27,7 +36,7 @@ const Projects = () => {
       live: 'https://ianmazhanga.github.io/DashBoard-project/',
     },
     {
-      id: 3,
+      id: 4,
       title: 'Portfolio Website',
       description: 'Personal portfolio website with interactive 3D animations, smooth transitions, and modern design. Built with React and TypeScript.',
       tech: ['React', 'TypeScript', 'Three.js', 'Framer Motion', 'Vite'],
