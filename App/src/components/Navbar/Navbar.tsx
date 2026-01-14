@@ -82,23 +82,25 @@ const Navbar = () => {
                 {item.name}
               </motion.button>
               <motion.div
-                className="navbar-arrow"
-                initial={{ opacity: 0, scale: 0.5, rotate: 0 }}
-                animate={{ opacity: 1, scale: 1, rotate: 360 }}
-                transition={{ duration: 0.8, ease: "easeOut", delay: item.delay + 0.2 }}
+                className="navbar-arrow-down"
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: item.delay + 0.2 }}
               >
-                <svg width="40" height="40" viewBox="0 0 50 50" fill="none">
+                <svg width="60" height="30" viewBox="0 0 60 30" fill="none">
                   <path
-                    d="M25 5 L40 25 L25 45 L10 25 Z"
-                    stroke="url(#gradient)"
-                    strokeWidth="2"
-                    fill="url(#gradient)"
-                    className="arrow-shape"
+                    d="M10 5 L30 20 L50 5"
+                    stroke="url(#gradient-down)"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="arrow-down-shape"
                   />
                   <defs>
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <linearGradient id="gradient-down" x1="0%" y1="0%" x2="100%" y2="0%">
                       <stop offset="0%" stopColor="#4fd1c5" />
-                      <stop offset="100%" stopColor="#38b2ac" />
+                      <stop offset="50%" stopColor="#38b2ac" />
+                      <stop offset="100%" stopColor="#4fd1c5" />
                     </linearGradient>
                   </defs>
                 </svg>
