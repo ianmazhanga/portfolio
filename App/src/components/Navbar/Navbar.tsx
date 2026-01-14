@@ -121,7 +121,7 @@ const Navbar = () => {
                 transition={{ duration: 0.5, delay: item.delay }}
               >
                 <motion.button
-                  className="navbar-link-fancy"
+                  className={`navbar-link-fancy ${location.pathname === item.path ? 'active' : ''}`}
                   onClick={() => handleNavigation(item.path)}
                   whileHover={{
                     scale: 1.1,
@@ -131,6 +131,29 @@ const Navbar = () => {
                 >
                   {item.name}
                 </motion.button>
+                {location.pathname === item.path && (
+                  <motion.div
+                    className="navbar-active-indicator"
+                    layoutId="navbar-indicator"
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 2 L16 10 L10 18 L4 10 Z"
+                        fill="url(#gradient-indicator)"
+                        className="indicator-shape"
+                      />
+                      <defs>
+                        <linearGradient id="gradient-indicator" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stopColor="#4fd1c5" />
+                          <stop offset="100%" stopColor="#38b2ac" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </motion.div>
+                )}
               </motion.div>
             ))}
           </div>
@@ -143,7 +166,7 @@ const Navbar = () => {
               transition={{ duration: 0.5, delay: centerNavItem.delay }}
             >
               <motion.button
-                className="navbar-link-fancy navbar-link-home"
+                className={`navbar-link-fancy navbar-link-home ${isHomePage ? 'active' : ''}`}
                 onClick={() => handleNavigation(centerNavItem.path)}
                 whileHover={{
                   scale: 1.1,
@@ -153,29 +176,29 @@ const Navbar = () => {
               >
                 {centerNavItem.name}
               </motion.button>
-            </motion.div>
-
-            <motion.div
-              className="navbar-arrow"
-              initial={{ opacity: 0, scale: 0.5, rotate: 0 }}
-              animate={{ opacity: 1, scale: 1, rotate: 360 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-            >
-              <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-                <path
-                  d="M25 5 L40 25 L25 45 L10 25 Z"
-                  stroke="url(#gradient)"
-                  strokeWidth="2"
-                  fill="url(#gradient)"
-                  className="arrow-shape"
-                />
-                <defs>
-                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#4fd1c5" />
-                    <stop offset="100%" stopColor="#38b2ac" />
-                  </linearGradient>
-                </defs>
-              </svg>
+              {isHomePage && (
+                <motion.div
+                  className="navbar-active-indicator"
+                  layoutId="navbar-indicator"
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                      d="M10 2 L16 10 L10 18 L4 10 Z"
+                      fill="url(#gradient-indicator)"
+                      className="indicator-shape"
+                    />
+                    <defs>
+                      <linearGradient id="gradient-indicator" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#4fd1c5" />
+                        <stop offset="100%" stopColor="#38b2ac" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </motion.div>
+              )}
             </motion.div>
           </div>
 
@@ -189,7 +212,7 @@ const Navbar = () => {
                 transition={{ duration: 0.5, delay: item.delay }}
               >
                 <motion.button
-                  className="navbar-link-fancy"
+                  className={`navbar-link-fancy ${location.pathname === item.path ? 'active' : ''}`}
                   onClick={() => handleNavigation(item.path)}
                   whileHover={{
                     scale: 1.1,
@@ -199,6 +222,29 @@ const Navbar = () => {
                 >
                   {item.name}
                 </motion.button>
+                {location.pathname === item.path && (
+                  <motion.div
+                    className="navbar-active-indicator"
+                    layoutId="navbar-indicator"
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M10 2 L16 10 L10 18 L4 10 Z"
+                        fill="url(#gradient-indicator)"
+                        className="indicator-shape"
+                      />
+                      <defs>
+                        <linearGradient id="gradient-indicator" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stopColor="#4fd1c5" />
+                          <stop offset="100%" stopColor="#38b2ac" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </motion.div>
+                )}
               </motion.div>
             ))}
           </div>

@@ -208,6 +208,25 @@
   }
 }
 
+.navbar-active-indicator {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 0 12px rgba(79, 209, 197, 0.7));
+  pointer-events: none;
+}
+
+.indicator-shape {
+  animation: rotate-indicator 8s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rotate-indicator {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 .navbar-toggle {
   display: none;
   flex-direction: column;
@@ -396,5 +415,14 @@
   .navbar-link-home {
     font-size: 1.15rem;
     padding: 8px 22px;
+  }
+
+  .navbar-active-indicator {
+    bottom: -23px;
+  }
+
+  .navbar-active-indicator svg {
+    width: 16px;
+    height: 16px;
   }
 }
