@@ -32,26 +32,26 @@
 
 .navbar-item-with-arrow:nth-child(1) {
   /* About - bottom left area */
-  bottom: 80px;
-  left: 120px;
+  bottom: 15%;
+  left: 8%;
 }
 
 .navbar-item-with-arrow:nth-child(2) {
   /* Projects - top left area */
-  top: 120px;
-  left: 80px;
+  top: 18%;
+  left: 12%;
 }
 
 .navbar-item-with-arrow:nth-child(3) {
   /* Experience - top right area */
-  top: 90px;
-  right: 140px;
+  top: 22%;
+  right: 10%;
 }
 
 .navbar-item-with-arrow:nth-child(4) {
   /* Contact - bottom right area */
-  bottom: 110px;
-  right: 90px;
+  bottom: 20%;
+  right: 15%;
 }
 
 /* Floating Navbar */
@@ -204,23 +204,23 @@
 /* Responsive */
 @media (max-width: 1024px) {
   .navbar-item-with-arrow:nth-child(1) {
-    bottom: 50px;
-    left: 60px;
+    bottom: 12%;
+    left: 6%;
   }
 
   .navbar-item-with-arrow:nth-child(2) {
-    top: 80px;
-    left: 40px;
+    top: 15%;
+    left: 8%;
   }
 
   .navbar-item-with-arrow:nth-child(3) {
-    top: 60px;
-    right: 70px;
+    top: 18%;
+    right: 7%;
   }
 
   .navbar-item-with-arrow:nth-child(4) {
-    bottom: 70px;
-    right: 50px;
+    bottom: 16%;
+    right: 10%;
   }
 
   .navbar-floating {
@@ -254,23 +254,23 @@
 
 @media (max-width: 768px) {
   .navbar-item-with-arrow:nth-child(1) {
-    bottom: 30px;
-    left: 35px;
+    bottom: 8%;
+    left: 5%;
   }
 
   .navbar-item-with-arrow:nth-child(2) {
-    top: 50px;
-    left: 25px;
+    top: 12%;
+    left: 7%;
   }
 
   .navbar-item-with-arrow:nth-child(3) {
-    top: 40px;
-    right: 45px;
+    top: 10%;
+    right: 6%;
   }
 
   .navbar-item-with-arrow:nth-child(4) {
-    bottom: 45px;
-    right: 30px;
+    bottom: 11%;
+    right: 8%;
   }
 
   .navbar-item-with-arrow {
