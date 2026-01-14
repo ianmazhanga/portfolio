@@ -15,7 +15,7 @@ const Projects = () => {
       tech: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
       image: '👟',
       github: 'https://github.com/ianmazhanga/nike-website',
-      live: '#',
+      live: 'https://ianmazhanga.github.io/nike-website/',
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const Projects = () => {
       tech: ['TypeScript', 'CSS', 'JavaScript'],
       image: '📊',
       github: 'https://github.com/ianmazhanga/DashBoard-project',
-      live: '#',
+      live: 'https://ianmazhanga.github.io/DashBoard-project/',
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ const Projects = () => {
       tech: ['React', 'TypeScript', 'Three.js', 'Framer Motion', 'Vite'],
       image: '💼',
       github: 'https://github.com/ianmazhanga/portfolio',
-      live: '#',
+      live: 'https://ianmazhanga.github.io/portfolio/',
     },
   ];
 
@@ -121,6 +121,8 @@ const Projects = () => {
               <div className="project-links">
                 <motion.a
                   href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="project-link"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -129,6 +131,8 @@ const Projects = () => {
                 </motion.a>
                 <motion.a
                   href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="project-link primary"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
