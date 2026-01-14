@@ -27,10 +27,10 @@ const Navbar = () => {
   };
 
   const allNavItems = [
-    { name: 'About', path: '/about', delay: 0.1 },
-    { name: 'Projects', path: '/projects', delay: 0.2 },
-    { name: 'Experience', path: '/experience', delay: 0.3 },
-    { name: 'Contact', path: '/contact', delay: 0.4 }
+    { name: 'About', path: '/about', delay: 0.1 },      // bottom left
+    { name: 'Projects', path: '/projects', delay: 0.2 }, // top left
+    { name: 'Experience', path: '/experience', delay: 0.3 }, // top right
+    { name: 'Contact', path: '/contact', delay: 0.4 }   // bottom right
   ];
 
   const leftNavItems = [
