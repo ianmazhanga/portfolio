@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import SplashCursor from '../../components/SplashCursor/SplashCursor';
 import LaserFlow from '../../components/LaserFlow/LaserFlow';
 import './Contact.css';
 
@@ -68,11 +67,6 @@ const Contact = () => {
 
   return (
     <section className="contact">
-      {/* Splash Cursor background */}
-      <div className="splash-background">
-        <SplashCursor />
-      </div>
-
       {/* LaserFlow effect at the top */}
       <div className="laser-flow-background">
         <LaserFlow

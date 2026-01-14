@@ -123,6 +123,9 @@ const Navbar = () => {
                 <motion.button
                   className={`navbar-link-fancy ${location.pathname === item.path ? 'active' : ''}`}
                   onClick={() => handleNavigation(item.path)}
+                  animate={{
+                    scale: location.pathname === item.path ? 1.08 : 1,
+                  }}
                   whileHover={{
                     scale: 1.1,
                     textShadow: '0 0 30px rgba(79, 209, 197, 1)',
@@ -146,6 +149,9 @@ const Navbar = () => {
               <motion.button
                 className={`navbar-link-fancy ${isHomePage ? 'active' : ''}`}
                 onClick={() => handleNavigation(centerNavItem.path)}
+                animate={{
+                  scale: isHomePage ? 1.08 : 1,
+                }}
                 whileHover={{
                   scale: 1.1,
                   textShadow: '0 0 30px rgba(79, 209, 197, 1)',
@@ -170,6 +176,9 @@ const Navbar = () => {
                 <motion.button
                   className={`navbar-link-fancy ${location.pathname === item.path ? 'active' : ''}`}
                   onClick={() => handleNavigation(item.path)}
+                  animate={{
+                    scale: location.pathname === item.path ? 1.08 : 1,
+                  }}
                   whileHover={{
                     scale: 1.1,
                     textShadow: '0 0 30px rgba(79, 209, 197, 1)',
