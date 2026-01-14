@@ -10,6 +10,10 @@ const Navbar = () => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
 
+  // Debug logging
+  console.log('Current pathname:', location.pathname);
+  console.log('isHomePage:', isHomePage);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
