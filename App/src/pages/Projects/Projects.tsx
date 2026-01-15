@@ -7,6 +7,7 @@ const Projects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
+  // Projects list - featuring Mwenz Group client work
   const projects = [
     {
       id: 1,
