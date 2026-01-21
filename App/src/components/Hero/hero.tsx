@@ -40,10 +40,10 @@ const Hero = () => {
         >
           <TextType
             text={[
-              "Software Developer",
-              "React Specialist",
-              "TypeScript Enthusiast",
-              "Problem Solver"
+              "Frontend Engineer",
+              "React & TypeScript Developer",
+              "Redux Specialist",
+              "UI Developer"
             ]}
             typingSpeed={75}
             pauseDuration={1500}
@@ -58,8 +58,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          I build modern, responsive, and interactive web applications using
-          React & TypeScript.
+          Frontend Engineer building scalable, component-driven web applications
+          with React, TypeScript, and Redux.
         </motion.p>
 
         <motion.div

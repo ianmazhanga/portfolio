@@ -9,10 +9,14 @@ const About = () => {
   const technologies = [
     { name: 'React', color: '#61DAFB', icon: '⚛️' },
     { name: 'TypeScript', color: '#3178C6', icon: '📘' },
-    { name: 'CSS', color: '#1572B6', icon: '🎨' },
-    { name: 'HTML', color: '#E34F26', icon: '📄' },
+    { name: 'Redux', color: '#764ABC', icon: '🔄' },
     { name: 'JavaScript', color: '#F7DF1E', icon: '⚡' },
+    { name: 'Sass/SCSS', color: '#CC6699', icon: '🎨' },
+    { name: 'HTML5', color: '#E34F26', icon: '📄' },
+    { name: 'CSS3', color: '#1572B6', icon: '🎯' },
     { name: 'Git', color: '#F05032', icon: '🔧' },
+    { name: 'Node.js', color: '#339933', icon: '🟢' },
+    { name: 'Figma', color: '#F24E1E', icon: '🖼️' },
   ];
 
   const containerVariants: Variants = {
@@ -62,19 +66,21 @@ const About = () => {
         <motion.h2 variants={itemVariants}>About Me</motion.h2>
 
         <motion.p variants={itemVariants}>
-          I'm a self-taught Software Developer based in <strong>Johannesburg, South Africa</strong>,
-          with a passion for building dynamic and user-friendly web applications.
+          Frontend Engineer based in <strong>Johannesburg, South Africa</strong> with hands-on
+          experience building scalable, component-driven web applications using React, TypeScript,
+          and modern state management.
         </motion.p>
 
         <motion.p variants={itemVariants}>
-          I specialize in <strong>React</strong>, <strong>TypeScript</strong>,
-          <strong> HTML</strong>, and <strong>CSS</strong>. I'm dedicated to continuous
-          learning and growth, aiming to become a full-stack developer.
+          Skilled in translating <strong>Figma designs</strong> into responsive, accessible UIs,
+          structuring clean and maintainable codebases, and integrating dynamic data from
+          <strong> APIs</strong> and <strong>CMS platforms</strong>.
         </motion.p>
 
         <motion.p variants={itemVariants}>
-          I enjoy turning ideas into real products, collaborating with teams,
-          and staying updated with the latest industry trends through monthly workshops.
+          Comfortable working remotely and collaborating with designers and cross-functional teams.
+          Actively growing expertise in <strong>Redux</strong>, headless CMS workflows, performance
+          optimisation, and web accessibility best practices.
         </motion.p>
       </motion.div>
 

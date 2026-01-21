@@ -10,14 +10,19 @@ const Experience = () => {
   const workExperience = [
     {
       id: 1,
-      title: 'Self-Taught Web Developer',
-      company: 'Independent',
-      period: 'Ongoing',
+      title: 'Frontend Developer',
+      company: 'Freelance | Self-Employed',
+      period: 'Jan 2024 – Present | Remote',
       responsibilities: [
-        'Developed and maintained multiple web applications using React and TypeScript',
-        'Collaborated with backend developers to ensure seamless integration',
-        'Utilized Git and GitHub for version control and code collaboration',
-        'Built responsive and interactive user interfaces with modern web technologies',
+        'Built and maintained scalable frontend codebases using React and TypeScript',
+        'Structured projects using reusable, modular components to improve maintainability',
+        'Implemented global state management using Redux Toolkit for shared UI and application state',
+        'Managed async data flows and API-driven content using modern React patterns',
+        'Implemented responsive layouts and custom UI themes aligned with design specifications',
+        'Integrated dynamic data from REST APIs into frontend components',
+        'Collaborated closely with designers to translate Figma designs into functional web interfaces',
+        'Used Git and GitHub for version control, feature branching, and code management',
+        'Tested UIs for responsiveness, usability, and performance across devices and browsers',
       ],
     },
   ];
@@ -25,25 +30,32 @@ const Experience = () => {
   const education = [
     {
       id: 1,
+      institution: "St. Anthony's High School",
+      degree: 'Grade 12',
+      period: '2019 – 2023',
+      description: 'Completed high school education with focus on academics',
+    },
+    {
+      id: 2,
       institution: 'Coding with Mosh',
       degree: 'Web Development Certification',
       period: 'Completed',
       description: 'Comprehensive web development course covering modern technologies and best practices',
     },
     {
-      id: 2,
-      institution: 'Self-Taught',
+      id: 3,
+      institution: 'Self-Directed Learning',
       degree: 'Continuous Learning',
       period: 'Ongoing',
-      description: 'Independently learning and building projects to expand skills and knowledge',
+      description: 'Headless CMS platforms (Sanity, Storyblok), Advanced React and Redux patterns, Frontend performance optimisation, Web accessibility best practices',
     },
   ];
 
   const skills = {
-    languages: ['JavaScript', 'TypeScript', 'HTML', 'CSS'],
-    frameworks: ['React', 'Framer Motion', 'Three.js'],
-    tools: ['Git', 'GitHub', 'Visual Studio Code', 'npm'],
-    other: ['Responsive Design', 'Version Control', 'Teamwork', 'Problem Solving'],
+    languages: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3', 'Sass/SCSS'],
+    frameworks: ['React (Hooks)', 'Redux Toolkit', 'Framer Motion', 'React Router', 'Three.js', 'Vite'],
+    tools: ['Git', 'GitHub', 'VS Code', 'Node.js', 'npm', 'Browser DevTools', 'Figma'],
+    other: ['REST API Integration', 'Responsive Design', 'Cross-browser Testing', 'Accessibility (WCAG)', 'Agile Workflows', 'CMS Integration'],
   };
 
   const containerVariants: Variants = {

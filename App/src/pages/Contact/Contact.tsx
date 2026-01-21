@@ -51,17 +51,17 @@ const Contact = () => {
     {
       name: 'GitHub',
       icon: '💻',
-      url: 'https://github.com',
+      url: 'https://github.com/ianmazhanga',
     },
     {
       name: 'LinkedIn',
       icon: '💼',
-      url: 'https://linkedin.com',
+      url: 'https://www.linkedin.com/in/ian-mazhanga',
     },
     {
-      name: 'Twitter',
-      icon: '🐦',
-      url: 'https://twitter.com',
+      name: 'Portfolio',
+      icon: '🌐',
+      url: 'https://ianmazhanga.github.io/portfolio',
     },
   ];
 
